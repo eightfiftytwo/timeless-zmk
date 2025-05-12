@@ -67,7 +67,7 @@ parse_config:
     "&hmr RS(LCTRL)ESC": Esc
     "&hmr LA(LGUI)LC(A)": Select All
     "&kp LC(A)": Select All
-    "&arc_shift": { "t": Arcane, "h": "Shift" }
+    "&arc_shift": { "t": "Arcane", "h": "Shift" }
     "&bs_del_l": { "t": "Bspc", "h": "Lang", "s": "Del" }
     "&hml LS(LCTRL)MINUS": "-"
     # "&hml LS(LGUI)DQT": '"'
@@ -79,7 +79,7 @@ parse_config:
     "&tab_swap": Next Tab
     "&kp LA(F4)": Close
     "&dot_spc": Fullstop
-    "&smart_num": { "t": Smart, "h": Num }
+    # "&smart_num": { "tap": Triune, "hold": Num }
     "&copy_cut": { "t": "Copy", "s": "Cut" }
     "&kp C_AC_BACK": Back
     "&kp C_AC_FORWARD": Forward
