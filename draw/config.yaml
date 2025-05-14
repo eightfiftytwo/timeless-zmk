@@ -85,6 +85,7 @@ parse_config:
     "&kp C_AC_FORWARD": Forward
     "&kp LS(LC(LALT))": Meh
     "&kp RS(RC(RALT))": Meh
+    "&launch": Launch App
 
   trans_legend: { "t": "", "type": "trans" }
 

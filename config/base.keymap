@@ -178,9 +178,9 @@ ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(C)>, <&kp LC(X)>;
 ZMK_MOD_MORPH(arc_shift, bindings = <&sk RSHFT>, <&caps_word>;
               mods = <(MOD_RSFT)>;)
 
-ZMK_MOD_MORPH(spc_under, bindings = <&kp SPACE>, <&kp UNDER>;
+ZMK_MOD_MORPH(spacer, bindings = <&kp SPACE>, <&kp UNDER>;
               mods = <(MOD_LSFT|MOD_RSFT)>;)
-ZMK_HOLD_TAP(mt_spc, bindings = <&kp>, <&spc_under>; flavor = "balanced";
+ZMK_HOLD_TAP(mt_spc, bindings = <&kp>, <&spacer>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 #define LGUI_SPC_ &mt_spc LGUI 0
 
@@ -216,7 +216,7 @@ ZMK_LAYER(Base,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &sk LHYPER    &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &comma_morph  &dot_morph    &kp FSLH      &sk RMEH
 // ╰───────────────────────────────────────────────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼───────────────────────────────────────────────────────╯
-                                               SMART_NUM     LGUI_SPC_     &lt FN TAB        &lt NAV RET   &bs_del_l     &arc_shift
+                                               SMART_NUM     &spacer       &lt FN TAB        &lt NAV RET   &bs_del_l     &arc_shift
 //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
