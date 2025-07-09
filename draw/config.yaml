@@ -86,6 +86,7 @@ parse_config:
     "&kp LS(LC(LALT))": Meh
     "&kp RS(RC(RALT))": Meh
     "&launch": Launch App
+    "&kp LC(GRAVE)": Terminal
 
   trans_legend: { "t": "", "type": "trans" }
 
