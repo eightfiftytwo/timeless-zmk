@@ -555,7 +555,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(588, 35)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Close</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">Terminal</tspan></text>
 </g>
 <g transform="translate(644, 28)" class="key trans keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -563,8 +563,9 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(700, 35)" class="key trans keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(756, 49)" class="key trans keypos-10">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(756, 49)" class="key keypos-10">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Close</text>
 </g>
 <g transform="translate(812, 49)" class="key trans keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -881,8 +882,9 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">9</text>
 </g>
-<g transform="translate(756, 49)" class="key trans keypos-10">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(756, 49)" class="key keypos-10">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">.</text>
 </g>
 <g transform="translate(812, 49)" class="key trans keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -951,9 +953,8 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(196, 140)" class="key trans keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(252, 147)" class="key keypos-28">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">.</text>
+<g transform="translate(252, 147)" class="key trans keypos-28">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
 <g transform="translate(308, 154)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -994,8 +995,9 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(554, 213) rotate(-15.0)" class="key trans keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(616, 205)" class="key trans keypos-41">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(616, 205)" class="key keypos-41">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">CANCEL</text>
 </g>
 </g>
 </g>
@@ -1387,60 +1389,68 @@ path.combo { stroke: #7f7f7f; }
 <text x="616" y="88" class="combo tap">Esc</text>
 </g>
 <g class="combo combopos-25">
+<rect rx="6" ry="6" x="602" y="74" width="28" height="26" class="combo"/>
+<text x="616" y="88" class="combo tap">Cancel</text>
+</g>
+<g class="combo combopos-26">
 <rect rx="6" ry="6" x="714" y="85" width="28" height="26" class="combo"/>
 <text x="728" y="98" class="combo tap">
 <tspan x="728" dy="-0.6em">Select</tspan><tspan x="728" dy="1.2em">All</tspan>
 </text>
 </g>
-<g class="combo combopos-26">
+<g class="combo combopos-27">
 <rect rx="6" ry="6" x="70" y="64" width="28" height="26" class="combo"/>
 <text x="84" y="77" class="combo tap">!</text>
 </g>
-<g class="combo combopos-27">
+<g class="combo combopos-28">
 <rect rx="6" ry="6" x="126" y="50" width="28" height="26" class="combo"/>
 <text x="140" y="63" class="combo tap">@</text>
 </g>
-<g class="combo combopos-28">
+<g class="combo combopos-29">
 <rect rx="6" ry="6" x="182" y="43" width="28" height="26" class="combo"/>
 <text x="196" y="56" class="combo tap">#</text>
 </g>
-<g class="combo combopos-29">
+<g class="combo combopos-30">
 <rect rx="6" ry="6" x="238" y="50" width="28" height="26" class="combo"/>
 <text x="252" y="63" class="combo tap">$</text>
 </g>
-<g class="combo combopos-30">
+<g class="combo combopos-31">
 <rect rx="6" ry="6" x="294" y="57" width="28" height="26" class="combo"/>
 <text x="308" y="70" class="combo tap">%</text>
 </g>
-<g class="combo combopos-31">
+<g class="combo combopos-32">
 <rect rx="6" ry="6" x="70" y="120" width="28" height="26" class="combo"/>
 <text x="84" y="133" class="combo tap">^</text>
 </g>
-<g class="combo combopos-32">
+<g class="combo combopos-33">
 <rect rx="6" ry="6" x="126" y="106" width="28" height="26" class="combo"/>
 <text x="140" y="119" class="combo tap">&amp;</text>
 </g>
-<g class="combo combopos-33">
+<g class="combo combopos-34">
 <rect rx="6" ry="6" x="182" y="99" width="28" height="26" class="combo"/>
 <text x="196" y="112" class="combo tap">*</text>
 </g>
-<g class="combo combopos-34">
+<g class="combo combopos-35">
 <rect rx="6" ry="6" x="238" y="106" width="28" height="26" class="combo"/>
 <text x="252" y="119" class="combo tap">Find</text>
 </g>
-<g class="combo combopos-35">
+<g class="combo combopos-36">
+<rect rx="6" ry="6" x="686" y="106" width="28" height="26" class="combo"/>
+<text x="700" y="119" class="combo tap">.</text>
+</g>
+<g class="combo combopos-37">
 <rect rx="6" ry="6" x="574" y="50" width="28" height="26" class="combo"/>
 <text x="588" y="63" class="combo tap">Home</text>
 </g>
-<g class="combo combopos-36">
+<g class="combo combopos-38">
 <rect rx="6" ry="6" x="686" y="50" width="28" height="26" class="combo"/>
 <text x="700" y="63" class="combo tap">End</text>
 </g>
-<g class="combo combopos-37">
+<g class="combo combopos-39">
 <rect rx="6" ry="6" x="574" y="106" width="28" height="26" class="combo"/>
 <text x="588" y="119" class="combo tap">PgUp</text>
 </g>
-<g class="combo combopos-38">
+<g class="combo combopos-40">
 <rect rx="6" ry="6" x="686" y="106" width="28" height="26" class="combo"/>
 <text x="700" y="119" class="combo tap">PgDn</text>
 </g>
