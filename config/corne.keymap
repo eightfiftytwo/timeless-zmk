@@ -1,3 +1,4 @@
+#define CONFIG_WIRELESS 1
 #include "base.keymap"
 
 // // Blank 6col template
