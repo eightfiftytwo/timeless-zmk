@@ -12,7 +12,6 @@
   #define _BT_SEL_KEYS_ &trans &trans &trans &trans &trans
 #endif
 
-/* #include "zmk-helpers/helper.h" */
 #include "zmk-helpers/key-labels/42.h"
 
 #define DEF 0
@@ -182,13 +181,13 @@ ZMK_MOD_MORPH(arc_shift, bindings = <&sk RSHFT>, <&caps_word>;
 
 ZMK_MOD_MORPH(spacer, bindings = <&kp SPACE>, <&kp UNDER>;
               mods = <(MOD_LSFT|MOD_RSFT)>;)
-ZMK_HOLD_TAP(mt_spc, bindings = <&kp>, <&spacer>; flavor = "balanced";
-             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-#define LGUI_SPC_ &mt_spc LGUI 0
+/* ZMK_HOLD_TAP(mt_spc, bindings = <&kp>, <&spacer>; flavor = "balanced"; */
+/*              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;) */
+/* #define LGUI_SPC_ &mt_spc LGUI 0 */
 
-// switch lang mod morph
-ZMK_MOD_MORPH(bs_del_l, bindings = <&bs_del>, <&kp SPACE>;
-              mods = <(MOD_LGUI|MOD_RGUI)>; keep-mods = <(MOD_LGUI|MOD_RGUI)>;)
+/* // switch lang mod morph */
+/* ZMK_MOD_MORPH(bs_del_l, bindings = <&bs_del>, <&kp SPACE>; */
+/*               mods = <(MOD_LGUI|MOD_RGUI)>; keep-mods = <(MOD_LGUI|MOD_RGUI)>;) */
 
 // gnome shell task switching
 ZMK_TRI_STATE(app_swap, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
@@ -212,13 +211,13 @@ ZMK_TRI_STATE(tab_swap, bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
 
 ZMK_LAYER(Base,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp GRAVE     &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P         &kp PSCRN
+     &kp GRAVE     &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P         &kp DEL  
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp ESC       &hml LALT A   &hml LGUI S   &hml LSHFT D  &hml LCTRL F  &kp G             &kp H         &hmr LCTRL J  &hmr RSHFT K  &hmr LGUI L  &hmr LALT SQT  &kp DEL
+     &kp ESC       &hml LALT A   &hml LGUI S   &hml LSHFT D  &hml LCTRL F  &kp G             &kp H         &hmr LCTRL J  &hmr RSHFT K  &hmr LGUI L  &hmr LALT SQT  CANCEL 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &sk LHYPER    &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &comma_morph  &dot_morph    &kp FSLH      &sk RMEH
+     &sk LHYPER    &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &comma_morph  &dot_morph    &kp FSLH      &kp PSCRN
 // ╰───────────────────────────────────────────────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼───────────────────────────────────────────────────────╯
-                                               SMART_NUM     &spacer       &lt FN TAB        &lt NAV RET   &bs_del_l     &arc_shift
+                                               SMART_NUM     &spacer       &lt FN TAB        &lt NAV RET   &bs_del       &arc_shift
 //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
