@@ -88,6 +88,7 @@ parse_config:
     "&launch": Launch App
     "&kp LC(GRAVE)": Terminal
     "&hmr RS(LCTRL)K_CANCEL": Cancel
+    "&arrow": "->"
 
   trans_legend: { "t": "", "type": "trans" }
 
