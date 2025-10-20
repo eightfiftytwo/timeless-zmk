@@ -27,8 +27,10 @@ ZMK_COMBO(lnch,  &launch,      LH2 LH1,     DEF CMK NAV NUM, COMBO_TERM_FAST, CO
 /* Arrow keys */
 ZMK_COMBO(up,    &kp UP,       RT2 RM2,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 ZMK_COMBO(down,  &kp DOWN,     RM2 RB2,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-ZMK_COMBO(left,  &kp LEFT,     RM1 RM0,     DEF CMK NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(right, &hmr LC(LALT)RIGHT,  RM2 RM3,  DEF CMK NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// originally fast
+ZMK_COMBO(left,  &kp LEFT,     RM1 RM0,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+ZMK_COMBO(right, &hmr LC(LALT)RIGHT,  RM2 RM3,  DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+ZMK_COMBO(esc,   &hmr RS(LCTRL)ESC,   RM1 RM2,  DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 
 /* Horizontal combos - left hand */
 // Combos overlapping HRMs are set up as hold-taps themselves to allow for instantaneous
@@ -66,7 +68,6 @@ ZMK_COMBO(gt,    &kp GT,       RT1 RT3,     DEF CMK NAV NUM, COMBO_TERM_FAST, CO
 // Combos overlapping HRMs are set up as hold-taps themselves to allow for instantaneous
 // chording of mods. Custom hold-tap instances can be bootstrapped on the go using the
 // 8-argument version of ZMK_COMBO defined in base.keymap.
-ZMK_COMBO(esc,   &hmr RS(LCTRL)ESC,   RM1 RM2,  DEF CMK NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 // ZMK_COMBO(cancel,&hmr RS(LCTRL)K_CANCEL, RM1 RM2,           NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(all,   &hmr LA(LGUI)LC(A),  RM3 RM4,  DEF CMK NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
