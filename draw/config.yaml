@@ -68,7 +68,7 @@ parse_config:
     "&hmr LA(LGUI)LC(A)": Select All
     "&kp LC(A)": Select All
     "&arc_shift": { "t": "Shift", "h": "sticky", "s": "Caps Word" }
-    "&bs_del_l": { "t": "Bspc", "h": "Lang", "s": "Del" }
+    "&esc_can": { "t": "Esc", "h": "Cancel"}
     "&hml LS(LCTRL)MINUS": "-"
     # "&hml LS(LGUI)DQT": '"'
     "&hml LS(LGUI)PLUS": "+"
@@ -79,7 +79,6 @@ parse_config:
     "&tab_swap": Next Tab
     "&kp LA(F4)": Close
     "&dot_spc": Fullstop
-    # "&smart_num": { "tap": Triune, "hold": Num }
     "&copy_cut": { "t": "Copy", "s": "Cut" }
     "&kp C_AC_BACK": Back
     "&kp C_AC_FORWARD": Forward
