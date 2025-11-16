@@ -59,7 +59,9 @@ parse_config:
     "&kp LC(Z)": Undo
     "&kp LC(X)": Cut
     "&kp LC(C)": Copy
+    # "&kp LC(C)": Copy
     "&kp LC(V)": Paste
+    # "&kp LC(V)": Paste
     "&kp LC(F)": Find
     "&kp LS(LC(LA(LGUI)))": Hyper
     "&kp RS(RC(RA(RGUI)))": Hyper
@@ -95,8 +97,8 @@ parse_config:
     combo_cut: { align: bottom, o: 0.15 }
     combo_ldrsh: { align: top, o: 1.35 }
 
-    combo_lt: { align: top, o: 0.15 }
-    combo_gt: { align: top, o: 0.15 }
+    # combo_lt: { align: top, o: 0.15 }
+    # combo_gt: { align: top, o: 0.15 }
 
   zmk_keycode_map:
     # custom mappings
