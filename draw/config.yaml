@@ -82,11 +82,14 @@ parse_config:
     "&kp LA(F4)": Close
     "&dot_spc": Fullstop
     "&copy_cut": { "t": "Copy", "s": "Cut" }
+    "&kp LC(LS(C))": Term Copy
+    "&kp LC(LS(V))": Term Paste
     "&kp C_AC_BACK": Back
     "&kp C_AC_FORWARD": Forward
     "&kp LS(LC(LALT))": Meh
     "&kp RS(RC(RALT))": Meh
     "&launch": Launch App
+    "&kp LG(SPACE)": Switch Lang
     "&kp LC(GRAVE)": Terminal
     "&hmr RS(LCTRL)K_CANCEL": Cancel
     "&arrow": "->"
