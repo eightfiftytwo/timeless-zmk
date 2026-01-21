@@ -55,10 +55,10 @@ ZMK_COMBO(lt,    &kp LT,       LT1 LT0,     DEF CMK NAV NUM, COMBO_TERM_FAST, CO
 
 /* Horizontal combos - right hand */
 ZMK_COMBO(cut,   &kp LC(X),    RB1 RB3,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-// ZMK_COMBO(copy,  &kp LC(INS),  RB2 RB3,     DEF CMK NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(copy,  &copy_shft, RB2 RB3,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-// ZMK_COMBO(paste, &kp LS(INS),  RB1 RB2,     DEF CMK NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(paste, &paste_shft,RB1 RB2,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+ZMK_COMBO(copy,  &kp LC(INS),  RB2 RB3,     DEF CMK NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+/* ZMK_COMBO(copy,  &copy_shft, RB2 RB3,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW) */
+ZMK_COMBO(paste, &kp LS(INS),  RB1 RB2,     DEF CMK NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+/* ZMK_COMBO(paste, &paste_shft,RB1 RB2,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW) */
 ZMK_COMBO(undo,  &kp LC(Z),    RB3 RB4,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 
 ZMK_COMBO(rpar,  &kp RPAR,     RT1 RT2,     DEF CMK NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
@@ -69,7 +69,6 @@ ZMK_COMBO(gt,    &kp GT,       RT1 RT0,     DEF CMK NAV NUM, COMBO_TERM_FAST, CO
 // Combos overlapping HRMs are set up as hold-taps themselves to allow for instantaneous
 // chording of mods. Custom hold-tap instances can be bootstrapped on the go using the
 // 8-argument version of ZMK_COMBO defined in base.keymap.
-// ZMK_COMBO(cancel,&hmr RS(LCTRL)K_CANCEL, RM1 RM2,           NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(all,   &hmr LA(LGUI)LC(A),  RM3 RM4,  DEF CMK NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /* Vertical combos - left hand */
@@ -86,7 +85,7 @@ ZMK_COMBO(find,  &kp LC(F),    LM1 LB1,     DEF CMK NAV NUM, COMBO_TERM_SLOW, CO
 
 /* Vertical combos - right hand */
 // ZMK_COMBO(sentc, &dot_spc,     RM3 RB3,     DEF CMK NAV    , COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-ZMK_COMBO(dot,   &kp DOT,      RM3 RB3,                 NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+/* ZMK_COMBO(dot,   &kp DOT,      RM3 RB3,                 NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW) */
 
 ZMK_COMBO(home,  &kp HOME,     RT1 RM1,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 ZMK_COMBO(end,   &kp END,      RT3 RM3,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
@@ -94,9 +93,9 @@ ZMK_COMBO(pg_up, &kp PG_UP,    RB1 RM1,     DEF CMK NAV NUM, COMBO_TERM_SLOW, CO
 ZMK_COMBO(pg_dn, &kp PG_DN,    RB3 RM3,     DEF CMK NAV    , COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 
 /* Language specific symbols */
-ZMK_MACRO(arrow, 
-  bindings
-    = <&kp MINUS>
-    , <&kp GT>
-;)
-ZMK_COMBO(arrow, &arrow,       LM0 LB0,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+/* ZMK_MACRO(arrow,  */
+/*   bindings */
+/*     = <&kp MINUS> */
+/*     , <&kp GT> */
+/* ;) */
+/* ZMK_COMBO(arrow, &arrow,       LM0 LB0,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW) */
