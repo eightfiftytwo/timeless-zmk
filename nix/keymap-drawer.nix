@@ -18,7 +18,7 @@ let
 in
 buildPythonApplication rec {
   pname = "keymap-drawer";
-  version = "0.23.0";
+  version = "main";
   pyproject = true;
 
   src = fetchFromGitHub {
