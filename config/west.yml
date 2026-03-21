@@ -52,7 +52,7 @@ manifest:
 
     - name: nice-view-gem 
       remote: m165437 
-      revision: main 
+      revision: v0.3.0 
       path: modules/zmk/nice-view-gem
 
     # Only source necessary Zephyr modules. Remove this entire section to restore
