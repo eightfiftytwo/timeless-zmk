@@ -13,7 +13,7 @@ RUN nix profile install nixpkgs#direnv nixpkgs#nix-direnv
 RUN nix profile install nixpkgs#just
 
 # Install fish?
-RUN nix profile install nixpkgs#fish nixpkgs#util-linux
+RUN nix profile install nixpkgs#fish nixpkgs#neovim nixpkgs#util-linux
 
 # Install the shell-hook
 RUN echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
