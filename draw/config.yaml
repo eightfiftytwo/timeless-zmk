@@ -91,6 +91,7 @@ parse_config:
     "&launch": Launch App
     "&kp LG(SPACE)": Switch Lang
     "&kp LC(GRAVE)": Terminal
+    "&kp LC(ESC)": Maximize Terminal
     "&hmr RS(LCTRL)K_CANCEL": Cancel
     "&arrow": "->"
 
