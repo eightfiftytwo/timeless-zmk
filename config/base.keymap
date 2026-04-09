@@ -203,11 +203,11 @@ ZMK_MOD_MORPH(space_, bindings = <&kp SPACE>, <&kp UNDER>;
 
 // task switching
 ZMK_TRI_STATE(app_swap, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
-              ignored-key-positions = <RM4 RT2 RM1 RM2 RM3>;)
+              ignored-key-positions = <RM3 LT2 LM1 LM2 LM3>;)
 ZMK_TRI_STATE(inst_swap, bindings = <&kt LGUI>, <&kp GRAVE>, <&kt LGUI>;
-              ignored-key-positions = <RT4 RT2 RM1 RM2 RM3>;)
+              ignored-key-positions = <RM4 LT2 LM1 LM2 LM3>;)
 ZMK_TRI_STATE(tab_swap, bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
-              ignored-key-positions = <LM4 RT2 RM1 RM2 RM3>;)
+              ignored-key-positions = <RM2 LT2 LM1 LM2 LM3>;)
 #define BACK &kp C_AC_BACK
 #define FORWARD &kp C_AC_FORWARD
 ZMK_MOD_MORPH(bf, bindings = <BACK>, <FORWARD>;
@@ -259,11 +259,11 @@ ZMK_LAYER(Cmk-DH,
 
 ZMK_LAYER(Nav,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     ___           ___           ___           ___           ___           ___               MAX_TERM      NAV_BSPC      NAV_UP        NAV_DEL       &inst_swap    ___       
+     ___           ___           NAV_DEL       NAV_UP        NAV_BSPC      &kp PG_UP         ___           MAX_TERM      BACK          FORWARD       ___           ___       
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ___           &sk LALT      &sk LGUI      &sk LSHFT     &sk LCTRL     ___               TOG_TERM      NAV_LEFT      NAV_DOWN      NAV_RIGHT     &app_swap     ___
+     ___           ___           NAV_LEFT      NAV_DOWN      NAV_RIGHT     &kp PG_DN         ___           TOG_TERM      &tab_swap     &app_swap     &inst_swap    ___
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ___           ___           ___           ___           ___           ___               ___           BACK          ___           FORWARD       ___           ___
+     ___           ___           ___           ___           ___           ___               ___           SH_PASTE      SH_COPY       ___           ___           ___
 // ╰───────────────────────────────────────────────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼───────────────────────────────────────────────────────╯
                                                ___           ___           ___               ___           ___           ___      
 //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
