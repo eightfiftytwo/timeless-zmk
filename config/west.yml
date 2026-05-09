@@ -28,8 +28,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
 
     # nice-view-gem
-    - name: m165437 
-      url-base: https://github.com/M165437 
+    - name: m165437
+      url-base: https://github.com/M165437
 
   projects:
     - name: zmk
@@ -57,9 +57,9 @@ manifest:
       path: modules/zmk/unicode
       revision: 1a6dbc797a46c4a61c3c71a7a9d013a5d5aee49e # main (4/19/2026)
 
-    - name: nice-view-gem 
-      remote: m165437 
-      revision: v0.3.0 
+    - name: nice-view-gem
+      remote: m165437
+      revision: main
       path: modules/zmk/nice-view-gem
 
     # Only source necessary Zephyr modules. Remove this entire section to restore
