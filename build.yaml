@@ -13,16 +13,17 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: corne_left nice_view_adapter nice_view_gem
     artifact-name: witchcraft_left
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: corne_right nice_view_adapter nice_view_gem
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: witchcraft_right
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     cmake-args: -DSHIELD=settings_reset
     shield: settings_reset
+    artifact-name: settings_reset-nice_nano
   # - board: seeeduino_xiao_ble
   #   shield: witchcraft_beacon
   # - board: seeeduino_xiao_ble
