@@ -85,7 +85,7 @@ draw: _check_yq_version
         .combos = [.combos[] | .l = ["Combos"]]
     '
     yq -y "$jq_expr" "{{ draw }}/base.yaml" >"{{ draw }}/overview.yaml"
-    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/overview.yaml" -k "ferris/sweep" >"{{ draw }}/overview.svg"
+    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/overview.yaml" -k "crkbd/rev1" >"{{ draw }}/overview.svg"
     sed -i '/<text.*class="label"/d' "{{ draw }}/overview.svg"
 
 # initialize west

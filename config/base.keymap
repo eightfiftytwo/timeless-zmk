@@ -201,6 +201,10 @@ ZMK_MOD_MORPH(arc_shift, bindings = <&sk RSHFT>, <&caps_word>;
 ZMK_MOD_MORPH(space_, bindings = <&kp SPACE>, <&kp UNDER>;
               mods = <(MOD_LSFT|MOD_RSFT)>;)
 
+// Tap: space | Shift + tap: - | Ctrl + shift + tap: _.
+SIMPLE_MORPH(space_morph, SFT, &kp SPACE, &space_inner_morph)
+SIMPLE_MORPH(space_inner_morph, CTL, &kp MINUS, &kp UNDER)
+
 // task switching
 ZMK_TRI_STATE(app_swap, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
               ignored-key-positions = <RM3 LT2 LM1 LM2 LM3>;)
@@ -219,6 +223,8 @@ ZMK_MACRO(esc_can, bindings = <CANCEL &kp ESC>; wait-ms = <0>;
           tap-ms = <5>;)
 
 SIMPLE_MORPH(dot_comma, SFT, &kp DOT, &kp COMMA)
+SIMPLE_MORPH(num2, SFT, &kp N2, &kp COMMA)
+SIMPLE_MORPH(num3, SFT, &kp N3, &kp DOT)
 
 #define SH_COPY &kp LC(LS(C))
 #define SH_PASTE &kp LC(LS(V))
@@ -241,7 +247,7 @@ ZMK_LAYER(Base,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &sk LHYPER    &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &comma_morph  &dot_morph    &kp FSLH      &sk RMEH 
 // ╰───────────────────────────────────────────────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼───────────────────────────────────────────────────────╯
-                                               SMART_NUM     &space_       &lt FN TAB        &lt NAV RET   &bs_del       &arc_shift
+                                               SMART_NUM     &space_morph  &lt FN TAB        &lt NAV RET   &bs_del       &arc_shift
 //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
@@ -287,7 +293,7 @@ ZMK_LAYER(Num,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      CANCEL        &sk LALT      &sk LGUI      &sk LSHFT     &sk LCTRL     ___               ___           &hmr LCTRL N4 &hmr RSHFT N5 &hmr LGUI N6  &hmr LALT N0  ___
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ___           &kp SLASH     &kp STAR      &kp MINUS     &kp PLUS      ___               ___           &kp N1        &kp N2        &kp N3        &dot_comma    ___
+     ___           &kp PLUS      &kp DOT       &kp COMMA     &kp EQUAL     ___               ___           &kp N1        &kp N2        &kp N3        ___           ___
 // ╰───────────────────────────────────────────────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼───────────────────────────────────────────────────────╯
                                                ___           ___           ___               ___           ___           ___   
 //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯

@@ -95,9 +95,5 @@ ZMK_COMBO(pg_dn, &kp PG_DN,    RB3 RM3,     DEF CMK NAV    , COMBO_TERM_SLOW, CO
 /* ZMK_COMBO(term_, &kp LC(ESC),  RT1 RM1,             NAV    , COMBO_TERM_SLOW, COMBO_IDLE_SLOW) */
 
 /* Language specific symbols */
-/* ZMK_MACRO(arrow,  */
-/*   bindings */
-/*     = <&kp MINUS> */
-/*     , <&kp GT> */
-/* ;) */
-/* ZMK_COMBO(arrow, &arrow,       LM0 LB0,     DEF CMK NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW) */
+ZMK_MACRO(arrow, bindings = <&kp MINUS &kp GT>;)
+ZMK_COMBO(arrow, &arrow,       LB1 LB0,     DEF CMK NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
