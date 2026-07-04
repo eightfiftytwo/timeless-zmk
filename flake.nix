@@ -7,12 +7,13 @@
     zephyr.flake = false;
 
     # Zephyr sdk and toolchain.
-    zephyr-nix.url = "github:urob/zephyr-nix";
+    zephyr-nix.url = "github:nix-community/zephyr-nix";
     zephyr-nix.inputs.zephyr.follows = "zephyr";
     zephyr-nix.inputs.nixpkgs.follows = "nixpkgs";
 
     # Devicetree linter; use my fork for nix-package and ZMK-specific tweaks.
     dts-linter.url = "github:urob/dts-linter/zmk";
+    dts-linter.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { nixpkgs, zephyr-nix, dts-linter, ... }: let
@@ -25,7 +26,7 @@
         zephyr = zephyr-nix.packages.${system};
         keymap_drawer = pkgs.python3Packages.callPackage ./nix/keymap-drawer.nix {};
         dts-format = pkgs.callPackage ./nix/dts-format.nix {
-          dts-linter = dts-linter.packages.${system}.default;
+          dts-linter = dts-linter.packages.${system}.dev;
         };
       in {
         default = pkgs.mkShellNoCC {
@@ -62,7 +63,13 @@
           shellHook = ''
             export ZMK_BUILD_DIR=$(pwd)/.build;
             export ZMK_SRC_DIR=$(pwd)/zmk/app;
-          '';
+          '' + (if pkgs.stdenv.isLinux then
+            let libatomic = pkgs.runCommand "libatomic" {} ''
+              mkdir -p $out/lib
+              cp -d ${pkgs.stdenv.cc.cc.lib}/lib/libatomic.so* $out/lib/
+            ''; in ''
+            export LD_LIBRARY_PATH="${libatomic}/lib";
+          '' else "");
         };
       }
     );

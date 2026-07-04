@@ -11,6 +11,7 @@ parse_config:
     "&bootloader": Boot
     "&caps_word": Caps Word
     "&kp LA(F4)": Close
+    "&kp LA(F4)": Close
 
     "&bt BT_SEL 0": BT 1
     "&bt BT_SEL 1": BT 2
@@ -21,6 +22,10 @@ parse_config:
     # "&kp LC(X)": Cut
     # "&kp LS(INS)": Paste
 
+    "&kp LG(LC(LEFT))": PDesk
+    "&kp LG(LC(RIGHT))": NDesk
+    "&kp LG(LC(LS(A)))": PinA.
+    "&kp LG(LC(LS(Q)))": PinW.
     "&kp LG(LC(LEFT))": PDesk
     "&kp LG(LC(RIGHT))": NDesk
     "&kp LG(LC(LS(A)))": PinA.
@@ -134,6 +139,8 @@ parse_config:
     DOWN: ↓
     LEFT: ←
     RIGHT: →
+
+    K_CANCEL: Cancel
 
     K_CANCEL: Cancel
 
